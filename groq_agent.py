@@ -3,8 +3,10 @@ from groq import Groq
 import requests
 import json
 import time
+from dotenv import load_dotenv
 
-client = Groq(api_key="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")
+api_key_degiskeni = os.getenv("api_key")
+client = Groq(api_key=api_key_degiskeni)
 
 def get_user_details(email: str):
     print(f"--- [API] Kullanıcı sorgulanıyor: {email} ---")
