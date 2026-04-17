@@ -1,0 +1,32 @@
+{
+  "users": {
+    "ali@sirket.com": {"id": "USR-001", "name": "Ali Yılmaz", "status": "active"},
+    "ayse@sirket.com": {"id": "USR-002", "name": "Ayşe Demir", "status": "active"},
+    "can@sirket.com": {"id": "USR-003", "name": "Can Öz", "status": "suspended"},
+    "deniz@sirket.com": {"id": "USR-004", "name": "Deniz Ak", "status": "active"},
+    "merve@sirket.com": {"id": "USR-005", "name": "Merve Can", "status": "active"}
+  },
+  "transactions": {
+    "USR-001": [
+      {"id": "TRX-101", "amount": 500, "status": "success", "date": "2024-05-01"},
+      {"id": "TRX-102", "amount": 1200, "status": "failed", "date": "2024-05-02"},
+      {"id": "TRX-103", "amount": 50, "status": "failed", "date": "2024-05-03"}
+    ],
+    "USR-002": [
+      {"id": "TRX-201", "amount": 150, "status": "success", "date": "2024-05-01"}
+    ],
+    "USR-003": [],
+    "USR-004": [
+      {"id": "TRX-401", "amount": 2500, "status": "failed", "date": "2024-05-05"}
+    ],
+    "USR-005": [
+      {"id": "TRX-501", "amount": 100, "status": "success", "date": "2024-05-01"},
+      {"id": "TRX-502", "amount": 200, "status": "success", "date": "2024-05-02"}
+    ]
+  },
+  "fraud_reasons": {
+    "TRX-102": "Yetersiz bakiye ve şüpheli IP adresi girişi.",
+    "TRX-103": "Kartın son kullanma tarihi hatalı girildi.",
+    "TRX-401": "Günlük işlem limiti aşıldı. Lütfen bankanızla iletişime geçin."
+  }
+}
