@@ -119,4 +119,4 @@ Sistem aşağıdaki zorunlu senaryoları başarıyla yerine getirmektedir:
 * **Hata Yönetimi (Error Handling):** Veritabanında olmayan bir e-posta sorgulandığında (Örn: olmayan@sirket.com), Flask API 404 Not Found döner. Agent bu hatayı (Exception) yakalayarak çökmez ve kullanıcıya "Sistemimizde bu e-posta adresiyle kayıtlı bir kullanıcı bulunamadı" şeklinde profesyonel bir dönüş yapar. Aynı şekilde red sebebi bulunmayan başarılı işlemler için gereksiz yere fraud (dolandırıcılık) kontrolü yapmaz.
 
 ---
----
+
